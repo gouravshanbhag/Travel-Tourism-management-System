@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WONDER TRAVELS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <style>
+        .hero{
+			    height: 100%;
+			    width: 100%;
+			    background-image: url("../image/bg.jpg"), url("../image/mask.jpg");
+			
+				background-blend-mode: screen;;
+			    background-position: center;
+			    background-size: cover;
+			    position: absolute;
+			}
+        </style>
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">Wonder<span>Travels</span></a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "booking.jsp" class = "nav-link">Booking</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "login.html" class = "nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <div class="hero">
+            <div class="form-box" style="height : 580px;">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+    
+                <form action="login.jsp" method="POST" id="login" class="input-group">
+                    <input name ="id" type="text" class="input-field" placeholder="User ID (5 characters)" required>
+                    <input name ="Input_p" type="text" class="input-field" placeholder="Enter Password" required>
+                    <!-- <input type="checkbox" class="check-box"><span>Remember password</span> -->
+                    <br><br><br>
+                    <button type="submit" class="submit-btn"><b>Log In</b></button>
+                </form>
+    
+                <form action="register.jsp" method="POST" id="register" class="input-group" >
+                    <input name="uid" type="text" class="input-field" placeholder="User ID" required>
+                    <input name="fname" type="text" class="input-field" placeholder="First Name" required>
+                    <input name="lname" type="text" class="input-field" placeholder="Last Name" required>
+                    <input name="email" type="email" class="input-field" placeholder="Email ID" required>
+                    <input name="phoneno" type="text" class="input-field" placeholder="phone no" required>
+                    <input name="passw" type="text" class="input-field" placeholder="Enter Password" required>
+                    <!-- <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span> -->
+                    <br><br><br>
+                    <button type="submit" class="submit-btn"><b>Register</b></button>
+                </form>
+    
+            </div>
+        </div>
+    
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+    
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WONDER TRAVELS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">Wonder<span>Travels</span></a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "booking.jsp" class = "nav-link">Booking</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "login.html" class = "nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Gallery</h1>
+                    <p> It’s all about the beautiful moments</p>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- gallery section -->
+        <div id = "gallery" class = "py-4">
+            <div class = "container">
+                <div class = "gallery-row">
+                    <div class = "gallery-item shadow">
+                        <img src = "image/aihole temple.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/badami.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/charminar hyderabad.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/jog falls.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/shimoga.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/mysore palace-2.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/gokarna.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/dandeli.jpg" alt = "gallery img">
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "image/bandipur national park-2.jpg" alt = "gallery img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of gallery section -->
+
+        <!-- img modal -->
+        <div id = "img-modal-box">
+            <div id = "img-modal">
+                <button type = "button" id = "modal-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <button type = "button" id = "prev-btn" class = "flex">
+                    <i class = "fas fa-chevron-left"></i>
+                </button>
+                <button type = "button" id = "next-btn" class = "flex">
+                    <i class = "fas fa-chevron-right"></i>
+                </button>
+                <img src = "image/aihole temple.jpg">
+            </div>
+        </div>
+        <!-- end of img modal -->
+
+        <!-- popular places section -->
+        <section id = "popular" class = "py-4">
+            <div class = "title-wrap">
+                <span class = "sm-title">know about some cool destination</span>
+                <h2 class = "lg-title">Popular Places</h2>
+            </div>
+
+            <div class = "popular-row">
+                <div class = "popular-item shadow">
+                    <img src = "image/bandipur national park.jpg" alt = "">
+                    <div>
+                        <span>Bandipur National Park, Bandipur</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Bandipur National Park has the second highest Tiger population in India. Bandipur National Park is located in Gundulpet taluk, Chamarajanagar district.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "image/srirangapatna temple-1.jpg" alt = "">
+                    <div>
+                        <span>Srirangapatna Temple, Srirangapatna</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Srirangapatna is a town and one of the seven Taluks of Mandya district, in the Indian State of Karnataka. Located near the city of Mysore, it is of religious, cultural and historic importance. </p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "image/hampi-3.jpg" alt = "">
+                    <div>
+                        <span>Hampi, Vijayanagara</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Hampi is an ancient village in the south Indian state of Karnataka. It’s dotted with numerous ruined temple complexes from the Vijayanagara Empire.</p>
+                    </div>
+                </div>
+                <div class = "popular-item shadow">
+                    <img src = "image/mysore palace.jpg" alt = "">
+                    <div>
+                        <span>Mysore Palace, Mysore</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">The Mysore Palace, also known as Amba Vilas Palace, is a historical palace and the royal residence at Mysore in the Indian state of Karnataka.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "image/coorg.jpg" alt = "">
+                    <div>
+                        <span>Coorg, Kodagu</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Coorg is a popular coffee producing hill station. It is popular for its beautiful green hills and the streams cutting right through them.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "image/halebidu.jpg" alt = "">
+                    <div>
+                        <span>Halebidu, Hassan</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Halebeedu (formerly known as Dwarasamudra) was the ancient capital of the Hoysalas just 17 km away from Belur.</p>
+                    </div>
+                </div>
+
+
+                <div class = "popular-item shadow">
+                    <img src = "image/nagarhole national park-6.jpg" alt = "">
+                    <div>
+                        <span>Nagarhole National Park, Mysore </span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Nagarhole National Park, also known as Rajiv Gandhi National Park, is a wildlife reserve in the South Indian state of Karnataka.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "image/jog falls.jpg" alt = "">
+                    <div>
+                        <span>Jog falls, Shivamogga</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <p class = "text">Jog Falls is a waterfall on the Sharavati river located in the Western Ghats near Sagar Taluk of Shivamogga District, Karnataka, India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular places section -->
+        
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <h1><b><i>WONDER</b> TRAVELS</i></h1>
+                    <p class = "text">Let's plan the trip of your dreams. Meet the world. Great Faces Great Places. Creating memories you will want to revisit.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "https://www.facebook.com/">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.twitter.com/">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li>Gol Gumbaz</li>
+                        <li>Aihole</li>
+                        <li>Hampi</li>
+                        <li>Devbagh Beach</li>
+                        <li>Bangalore Palace</li>
+                    </ul>
+                </div>
+
+                <div class = "xyz">
+                    <h2>No matter where you're going from, we take you there.</h2>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // image modal
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+
+            allGalleryItem.forEach((galleryItem) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                    showImageContent(imgIndex);
+                })
+            });
+
+            // next click
+            nextBtn.addEventListener('click', () => {
+                imgIndex++;
+                if(imgIndex > allGalleryItem.length){
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            });
+
+            // previous click
+            prevBtn.addEventListener('click', () => {
+                imgIndex--;
+                if(imgIndex <= 0){
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            });
+
+            function showImageContent(index){
+                imgModalDiv.querySelector('#img-modal img').src = `image/gallery-${index}.jpg`;
+            }
+
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
+    </body>
+</html>

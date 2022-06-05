@@ -1,0 +1,19 @@
+NORMALIZE.CSS - https://necolas.github.io/normalize.css/8.0.1/normalize.css
+
+cdn link - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+
+fonts.css - https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@200;400;500;700;900&display=swap
+
+
+https://ik-23.github.io/travelling/
+
+
+===============================
+
+1. use-case & sequence-diagram(resize), class diagram(remove permission class)
+2. er diagram(login_id attribute in LOGIN)
+3. INDIVIDUAL BOOKING PAGE 	- add cancel button -> page!
+					- add weather part
+					- add photos
+4. NON-FUNCTIONAL
+5. add predefined values in DB(seat availability)
